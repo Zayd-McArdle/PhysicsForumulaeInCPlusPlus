@@ -3,4 +3,5 @@
 namespace Waves
 {
     void loadSection();
+    void loadFormula();
 } // namespace Waves
