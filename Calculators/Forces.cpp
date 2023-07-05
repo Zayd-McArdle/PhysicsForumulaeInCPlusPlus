@@ -3,3 +3,7 @@
 void Forces::loadSection()
 {
 }
+
+void Forces::loadFormula()
+{
+}

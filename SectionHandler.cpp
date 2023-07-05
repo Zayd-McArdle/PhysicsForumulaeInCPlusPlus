@@ -5,36 +5,35 @@
 #include "Calculators/Forces.h"
 #include "Calculators/Waves.h"
 #include "Calculators/MagenetismAndElectromagenetism.h" 
-void returnToMainMenu()
+inline void returnToMainMenu()
 {
 }
-
-void goToEnergySection()
+inline void goToEnergySection()
 {
     printSectionMenu(Energy::loadSection);
 }
 
-void goToElectricitySection()
+inline void goToElectricitySection()
 {
     printSectionMenu(Electricity::loadSection);
 }
 
-void goToParticleMatterSection()
+inline void goToParticleMatterSection()
 {
     printSectionMenu(ParticleMatter::loadSection);
 }
 
-void goToForcesSection()
+inline void goToForcesSection()
 {
     printSectionMenu(Forces::loadSection);
 }
 
-void goToWavesSection()
+inline void goToWavesSection()
 {
     printSectionMenu(Waves::loadSection);
 }
 
-void goToMagenetismAndElectromagenetismSection()
+inline void goToMagenetismAndElectromagenetismSection()
 {
     printSectionMenu(MagenetismAndElectromagenetism::loadSection);
 }

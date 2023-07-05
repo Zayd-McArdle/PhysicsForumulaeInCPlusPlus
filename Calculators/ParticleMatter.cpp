@@ -3,3 +3,7 @@
 void ParticleMatter::loadSection()
 {
 }
+
+void ParticleMatter::loadFormula()
+{
+}

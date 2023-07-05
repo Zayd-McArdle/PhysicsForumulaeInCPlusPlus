@@ -3,3 +3,7 @@
 void Energy::loadSection()
 {
 }
+
+void Energy::loadFormula()
+{
+}
