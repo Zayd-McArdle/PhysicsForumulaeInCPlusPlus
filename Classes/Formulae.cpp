@@ -1,4 +1,5 @@
 #include "Formulae.h"
+#include <cmath>
 #pragma region Formula Base
 inline bool FormulaBase::fieldInitialised(double *field)
 {
@@ -23,6 +24,17 @@ inline double SimpleFormula::getLeft() {
 }
 inline double SimpleFormula::getRight() { 
     return m_top / m_left; 
+}
+#pragma endregion
+#pragma region Complex Formula
+inline double ComplexFormula::getTop() { 
+    return 0.5 * m_left * pow(m_right, 2); 
+}
+inline double ComplexFormula::getLeft() { 
+    return m_top / (0.5 * pow(m_right, 2)); 
+}
+inline double ComplexFormula::getRight() { 
+    return sqrt(2 * m_top / m_left);
 }
 #pragma endregion
 #pragma region Extended Formula
