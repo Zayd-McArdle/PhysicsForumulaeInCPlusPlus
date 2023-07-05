@@ -18,10 +18,21 @@ class SimpleFormula : public FormulaBase
 {
 
 public:
-    inline double getTop() override;
-    inline double getLeft() override;    
-    inline double getRight() override;    
+    double getTop() override;
+    double getLeft() override;    
+    double getRight() override;    
 };
+
+/// @brief Used for triangle formulas that include halves, squares, and square roots. E.g. kinetic energy and elastic potential energy.
+class ComplexFormula : public FormulaBase
+{
+
+public:
+    double getTop() override;
+    double getLeft() override;    
+    double getRight() override;    
+};
+
 /// @brief Used for formulas that have an additonal element
 class ExtendedFormula : public FormulaBase
 {
