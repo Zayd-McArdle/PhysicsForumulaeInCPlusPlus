@@ -1,5 +1,7 @@
 #pragma once
 #include "Menu.h"
+/// @brief Used for getting user inputs from menus
+/// @return returns -1 if a non-numeric character was entered
 static int getUserInput() {
     try
     {
